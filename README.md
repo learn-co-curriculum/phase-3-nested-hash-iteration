@@ -6,7 +6,7 @@
 
 -
 
-At this point you should be familiar with iterating over hashes that have one level—a series of key/value pairs on a single tier. 
+At this point you should be familiar with iterating over hashes that have one level—a series of key/value pairs on a single tier. For example: 
 
 ```ruby
 jon_snow = {
@@ -22,8 +22,7 @@ contacts = {
   "Jon Snow" => {
     name: "Jon",
     email: "jon_snow@thewall.we", 
-    favorite_icecream_flavors: ["chocolate", "vanilla", "mint chip"],
-    knows: nil
+    favorite_icecream_flavors: ["chocolate", "vanilla", "mint chip"]
   },
   "Freddy Mercury" => {
     name: "Freddy",
