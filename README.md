@@ -1,8 +1,8 @@
 # Iterating Over Nested Hashes
 
 ##Objectives
-* Understand how to iterate over a nested hash
-* Understand where you are at each level of the iteration
+1. Iterate over a nested hash
+
 
 -
 
@@ -118,4 +118,4 @@ mint chip
 
 Now it's your turn! You're going to iterate through the levels of this hash to operate on one of the ice cream flavor arrays. 
 
-**Reminder:** *Iterating through nested hashes is hard, and (I'm pretty sure) you are not psychic. Meaning, you can't necessarily predict with perfect clarity what the key/value pair is at a certain level of the hash.* ***Use `binding.pry`*** *when you are iterating in upcoming labs to make sure you understand what the key/value pair is that you are iterating over.* 
+**Reminder:** *Iterating through nested hashes is hard, and (we're pretty sure) you are not psychic. Meaning, you can't necessarily predict with perfect clarity what the key/value pair is at a certain level of the hash.* ***Use `binding.pry`*** *when you are iterating in upcoming labs to make sure you understand what the key/value pair is that you are iterating over.* 
