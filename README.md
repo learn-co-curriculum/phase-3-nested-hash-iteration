@@ -115,7 +115,3 @@ strawberry
 cookie dough
 mint chip
 ```
-
-Now it's your turn! You're going to iterate through the levels of this hash to operate on one of the ice cream flavor arrays. 
-
-**Reminder:** *Iterating through nested hashes is hard, and (we're pretty sure) you are not psychic. Meaning, you can't necessarily predict with perfect clarity what the key/value pair is at a certain level of the hash.* ***Use `binding.pry`*** *when you are iterating in upcoming labs to make sure you understand what the key/value pair is that you are iterating over.* 
