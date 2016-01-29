@@ -117,4 +117,4 @@ cookie dough
 mint chip
 ```
 
-<a href='https://learn.co/lessons/nested-hash-iteration' data-visibility='hidden'>View this lesson on Learn.co</a>
+<p data-visibility='hidden'>View <a href='https://learn.co/lessons/nested-hash-iteration' title='Iterating Over Nested Hashes'>Iterating Over Nested Hashes</a> on Learn.co and start learning to code for free.</p>
