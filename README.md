@@ -84,7 +84,7 @@ favorite_icecream_flavors: ["strawberry", "cookie dough", "mint chip"]
 
 ```
 
-Let's take is one step further and print out *just the favorite ice cream flavors*. Once again, we'll need to iterate down into that level of the hash, then we can access the favorite ice cream array and print out the flavors: 
+Let's take it one step further and print out *just the favorite ice cream flavors*. Once again, we'll need to iterate down into that level of the hash, then we can access the favorite ice cream array and print out the flavors: 
 
 ```ruby
 contacts.each do |person, data|
@@ -118,3 +118,5 @@ mint chip
 ```
 
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/nested-hash-iteration' title='Iterating Over Nested Hashes'>Iterating Over Nested Hashes</a> on Learn.co and start learning to code for free.</p>
+
+<p data-visibility='hidden'>View <a href='https://learn.co/lessons/nested-hash-iteration'>Nested Hash Iteration</a> on Learn.co and start learning to code for free.</p>
