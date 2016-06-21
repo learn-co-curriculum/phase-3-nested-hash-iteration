@@ -92,7 +92,7 @@ contacts.each do |person, data|
   #to iterate over the "data" hash, we can use the following line: 
   
   data.each do |attribute, value|
-    #at this level, "attribute" is describes the key of :name, :email, :favorite_icecream_flavors, or :knows
+    #at this level, "attribute" describes the key of :name, :email, :favorite_icecream_flavors, or :knows
     #we need to first check and see if the key is :favorite_icecream_flavors,
     #if it is, that means the VALUE is an array that we can iterate over to print out each element
     
@@ -120,3 +120,5 @@ mint chip
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/nested-hash-iteration' title='Iterating Over Nested Hashes'>Iterating Over Nested Hashes</a> on Learn.co and start learning to code for free.</p>
 
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/nested-hash-iteration'>Nested Hash Iteration</a> on Learn.co and start learning to code for free.</p>
+
+<p class='util--hide'>View <a href='https://learn.co/lessons/nested-hash-iteration'>Nested Hash Iteration</a> on Learn.co and start learning to code for free.</p>
