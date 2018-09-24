@@ -54,7 +54,7 @@ Freddy Mercury:
 }
 ```
 
-On the first level, the keys are our contacts' names, "Jon Snow" and "Freddy", and our values are the hashes that contain a series of key/value pairs describing them. 
+On the first level, the keys are our contacts' names, "Jon Snow" and "Freddy Mercury", and our values are the hashes that contain a series of key/value pairs describing them. 
 
 Let's iterate over the second level of our `contacts` hash. In order to access the key/value pairs of the second tier (i.e. the name, email, and other data about each contact), we need to iterate *down into* that level. So, we pick up where we left off with the previous iteration and we keep going: 
 
