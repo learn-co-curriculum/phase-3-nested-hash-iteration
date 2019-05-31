@@ -60,7 +60,7 @@ Let's iterate over the second level of our `contacts` hash. In order to access t
 
 ```ruby
 contacts.each do |person, data|
-  #at this level, "person" is Jon Snow or Freddy and "data" is a hash of key/value pairs
+  #at this level, "person" is Jon Snow or Freddy Mercury and "data" is a hash of key/value pairs
   #to iterate over the "data" hash, we can use the following line: 
   
   data.each do |attribute, value|
