@@ -4,6 +4,8 @@
 
 1. Iterate over a nested hash
 
+## Iterating Over Nested Hashes
+
 At this point you should be familiar with iterating over hashes that have one
 level &mdash; a series of key/value pairs on a single tier. For example:
 
