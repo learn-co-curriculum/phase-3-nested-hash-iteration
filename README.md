@@ -1,8 +1,8 @@
 # Iterating Over Nested Hashes
 
-## Objectives
+## Learning Goals
 
-1. Iterate over a nested hash
+- Iterate over a nested hash
 
 ## Iterating Over Nested Hashes
 
