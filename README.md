@@ -156,6 +156,8 @@ emails
 
 ## Code Along Exercise
 
+Fork and clone this exercise to code along!
+
 Let's do an exercise to get some practice iterating through nested arrays.
 You'll be coding your solution in `contacts.rb`. You'll be manipulating the hash
 that is returned by the `#contacts` method:
