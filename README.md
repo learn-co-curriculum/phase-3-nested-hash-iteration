@@ -240,7 +240,7 @@ Excellent! They do!
 Type `exit` while in Pry to continue. The `binding.pry` breakpoint should
 trigger a second time because we have _two_ contacts. You can verify that we're
 in the second loop through our hash by checking the values of `person` and
-`data` at the Pry prompt.
+`contact_details_hash` at the Pry prompt.
 
 Typing `exit` now will end the loop and exit Pry since we've finished
 iterating through our contacts. It will also display the results of the test,
