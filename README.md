@@ -314,7 +314,7 @@ iterate through the array, check each element to see if it is equal to
 "strawberry", and delete the element if the block returns `true`. [Learn
 more about `#delete_if` in the ruby docs.][delete_if docs].
 
-[delete_if docs]: https://docs.ruby-lang.org/en/2.7.3/Hash.html#method-i-delete_if
+[delete_if docs]: https://docs.ruby-lang.org/en/2.7.0/Hash.html#method-i-delete_if
 
 The full method should now be:
 
