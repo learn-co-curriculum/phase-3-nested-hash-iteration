@@ -38,9 +38,9 @@ contacts = {
     favorite_ice_cream_flavors: ["chocolate", "vanilla", "mint chip"],
     knows: nil
   },
-  "Freddy Mercury" => {
-    name: "Freddy",
-    email: "freddy@mercury.com",
+  "Freddie Mercury" => {
+    name: "Freddie",
+    email: "freddie@mercury.com",
     favorite_ice_cream_flavors: ["strawberry", "cookie dough", "mint chip"]
   }
 }
@@ -59,14 +59,14 @@ Jon Snow: {
   :favorite_ice_cream_flavors=>["chocolate", "vanilla", "mint chip"],
   :knows=>nil
 }
-Freddy Mercury: {
-  :name=>"Freddy",
-  :email=>"freddy@mercury.com",
+Freddie Mercury: {
+  :name=>"Freddie",
+  :email=>"freddie@mercury.com",
   :favorite_ice_cream_flavors=>["strawberry", "cookie dough", "mint chip"]
 }
 ```
 
-On the first level, the **keys** are our contacts' names, "Jon Snow" and "Freddy
+On the first level, the **keys** are our contacts' names, "Jon Snow" and "Freddie
 Mercury", and our **values** are the hashes that contain a series of key/value
 pairs describing them.
 
@@ -77,7 +77,7 @@ where we left off with the previous iteration and we keep going:
 
 ```rb
 contacts.each do |person, data|
-  #at this level, "person" is Jon Snow or Freddy Mercury and "data" is a hash of
+  #at this level, "person" is Jon Snow or Freddie Mercury and "data" is a hash of
   #key/value pairs to iterate over the "data" hash, we can use the following line:
 
   data.each do |attribute, value|
@@ -93,8 +93,8 @@ name: Jon
 email: jon_snow@thewall.we
 favorite_ice_cream_flavors: ["chocolate", "vanilla", "mint chip"]
 knows:
-name: Freddy
-email: freddy@mercury.com
+name: Freddie
+email: freddie@mercury.com
 favorite_ice_cream_flavors: ["strawberry", "cookie dough", "mint chip"]
 ```
 
@@ -104,7 +104,7 @@ then we can access the favorite ice cream array and print out the flavors:
 
 ```ruby
 contacts.each do |person, data|
-  #at this level, "person" is Jon Snow or Freddy and "data" is a hash of
+  #at this level, "person" is Jon Snow or Freddie and "data" is a hash of
   #key/value pairs to iterate over the "data" hash, we can use the following
   #line:
 
@@ -170,31 +170,31 @@ def contacts
       email: "jon_snow@thewall.we",
       favorite_ice_cream_flavors: ["chocolate", "vanilla"]
     },
-    "Freddy Mercury" => {
-      name: "Freddy",
-      email: "freddy@mercury.com",
+    "Freddie Mercury" => {
+      name: "Freddie",
+      email: "freddie@mercury.com",
       favorite_ice_cream_flavors: ["strawberry", "cookie dough", "mint chip"]
     }
   }
 end
 ```
 
-Your good buddy Freddy Mercury has recently developed a strawberry allergy! You
+Your good buddy Freddie Mercury has recently developed a strawberry allergy! You
 need to delete `"strawberry"` from his list of favorite ice cream flavors in the
 `remove_strawberry` method.
 
 Iterate over the `contacts` hash and when you reach the key
-`:favorite_ice_cream_flavors`, remove `"strawberry"` from the Array of Freddy's
+`:favorite_ice_cream_flavors`, remove `"strawberry"` from the Array of Freddie's
 favorite ice cream flavors.
 
 There are at least two ways you can accomplish this, and for this code along,
 we'll work with the second way.
 
 1. You can directly iterate over the hash that is the value of the
-   `"Freddy Mercury"` key by calling an enumerator method in
-   `contacts["Freddy Mercury"]`.
+   `"Freddie Mercury"` key by calling an enumerator method in
+   `contacts["Freddie Mercury"]`.
 
-2. You can set a iterate through the hash and check for `Freddy Mercury` only;
+2. You can set a iterate through the hash and check for `Freddie Mercury` only;
    when you reach the appropriate level, check to see if the key `==` ("is equal
    to") `:favorite_ice_cream_flavors`. If it is, check to see if the array of
    flavors contains `"strawberry"`. If it does, then delete it from the array.
@@ -253,7 +253,7 @@ Update your code to match the following:
 ```rb
 def remove_strawberry(contacts)
   contacts.each do |person, contact_details_hash|
-    if person == "Freddy Mercury"
+    if person == "Freddie Mercury"
       contact_details_hash.each do |attribute, data|
         binding.pry
       end
@@ -263,7 +263,7 @@ end
 ```
 
 Again, let's jump into our `binding.pry` using `learn test`. We can verify that
-we've found the record for Freddy Mercury by checking the values of our
+we've found the record for Freddie Mercury by checking the values of our
 variables:
 
 ```rb
@@ -271,7 +271,7 @@ attribute
 # => :name
 
 data
-# => "Freddy"
+# => "Freddie"
 ```
 
 > Remember, if you get stuck and can't enter text in Pry, hit `q` to continue!
@@ -289,7 +289,7 @@ Update your code to match the following:
 ```rb
 def remove_strawberry(contacts)
   contacts.each do |person, contact_details_hash|
-    if person == "Freddy Mercury"
+    if person == "Freddie Mercury"
       contact_details_hash.each do |attribute, data|
         if attribute == :favorite_ice_cream_flavors
           binding.pry
@@ -303,13 +303,13 @@ end
 This time we are still iterating through the attributes but we've added a
 conditional so the `pry` will only hit when the attribute is equal to
 `:favorite_ice_cream_flavors`. If we check the value of `data` in our binding,
-we should see the array containing Freddy's favorite flavors.
+we should see the array containing Freddie's favorite flavors.
 
 #### Step 4. Update the hash
 
 Lastly, we will use the `#delete_if` array method to iterate through the ice
 cream array and remove any element that matches "strawberry". Recall that `data`
-is the array containing Freddy's favorite ice cream flavors. `#delete_if` will
+is the array containing Freddie's favorite ice cream flavors. `#delete_if` will
 iterate through the array, check each element to see if it is equal to
 "strawberry", and delete the element if the block returns `true`. [Learn
 more about `#delete_if` in the ruby docs.][delete_if docs].
@@ -321,7 +321,7 @@ The full method should now be:
 ```rb
 def remove_strawberry(contacts)
   contacts.each do |person, contact_details_hash|
-    if person == "Freddy Mercury"
+    if person == "Freddie Mercury"
       contact_details_hash.each do |attribute, data|
         if attribute == :favorite_ice_cream_flavors
           data.delete_if {|ice_cream| ice_cream == "strawberry"}
