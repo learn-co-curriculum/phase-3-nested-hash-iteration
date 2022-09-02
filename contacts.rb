@@ -11,7 +11,7 @@ def contacts
     },
     "Freddie Mercury" => {
       name: "Freddie",
-      email: "freddy@mercury.com",
+      email: "freddie@mercury.com",
       favorite_ice_cream_flavors: ["strawberry", "cookie dough", "mint chip"]
     }
   }
